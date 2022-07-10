@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    function handleSelect(elm)
+    {
+       window.location = elm.value;
+    }
+  </script>
+<body bgcolor="teal">
+    <h1 align="center">Welcome {{name}}</h1>
+    <label for="file menu">Formulas</label>
+    <select name="file"  onchange="javascript:handleSelect(this)" id="file">
+        <option disabled selected value> -- select an option -- </option>
+        <option value="login/BMI">BMI</option>
+        <option value="login/Accelaration gravity">Accelaration gravity</option>
+        <option value="login/surfacetension">surfacetension</option>
+    </select>
+</body>
+</html>

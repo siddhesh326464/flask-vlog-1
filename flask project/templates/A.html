@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accelaration gravity</title>
+</head>
+<body bgcolor="orange">
+    <form action="/login/Accelaration gravity" method="POST">
+        <h1>Accelaration due to gravity</h1>
+        <p>When we release the ball from a specific height to the ground, it accelerates downward due to gravity force. Suppose there are no other types of forces acting on a falling ball other than gravity. In that case, it drops with a constant gravitational acceleration value of 9.8 m/s2, which is determined by Newton’s laws.  </p>
+        <h4>Case 1</h4>
+        <p>When we throw the ball horizontally along the ground, its velocity continuously increases, except it disturbs other objects. If we keep a ball before throwing, its velocity is zero. It begins increasing after it is released towards the ground. The greater the height from ball release, the faster the it will travel.</p>
+        <h2>Calculate Accelaration gravity </h2>
+        <h4>Mass of the object</h4>  
+        <input type="text" name="Mass of the object"><br>
+        <h4>The distance from the center of mass of the large body</h4>
+        <input type="text" name="The distance from the center of mass of the large body"><br>
+        <button type="submit" value="submit" style="margin-bottom: 10;">Calculate</button>
+     </form>
+    {%if g%}
+    <p> The Accelaration dur to gravity is {{g}}</p>
+    {% endif %}
+</body>
+</html>

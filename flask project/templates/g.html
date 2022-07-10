@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body bgcolor="teal">
+    <form action="/login/BMI" method="POST">
+        <h2>Body Mass Index</h2>
+        <p>Body Mass Index (BMI) is a person’s weight in kilograms (or pounds) divided by the square of height in meters (or feet). A high BMI can indicate high body fatness. BMI screens for weight categories that may lead to health problems, but it does not diagnose the body fatness or health of an individual.</p>
+        <h2>Calculate BMI</h2>
+        Weight 
+        <input type="text" name="weight"><br>
+        Height
+        <input type="text" name="height"><br>
+        <button type="submit" value="submit">Calculate</button>
+     
+
+
+        
+
+    </form>
+    {%if bmi%}
+    <p>your bmi is {{bmi}}</p>
+    {% endif %}
+</body>
+</html>

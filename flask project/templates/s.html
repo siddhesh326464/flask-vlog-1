@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surfacetension</title>
+</head>
+<body bgcolor="RosyBrown">
+
+    <form action="/login/surfacetension" method="POST">
+        <h2>surface tension</h2>
+        <h3>Definition of surface tension</h3>
+        <p>: the attractive force exerted upon the surface molecules of a liquid by the molecules beneath that tends to draw the surface molecules into the bulk of the liquid and makes the liquid assume the shape having the least surface area</p>
+        <h4>Enter the density</h4>
+        <input type="text" name="density" ><br>
+        <h4>Enter the hight</h4><br>
+        <input type="text" name="highht"><br>
+        <h4>Enter the readious of the object</h4>
+        <input type="text" name="readious"><br>
+
+        <button type="submit" value="submit">Calculate</button>
+    </form>
+    {%if surfacetension%}
+    <p>The calculated surface tension is {{surfacetension}}</p>
+    {% endif %}
+</body>
+</html>
